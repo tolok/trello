@@ -79,6 +79,11 @@ type Card struct {
 	IDLabels []string `json:"idLabels,omitempty"`
 	Labels   []*Label `json:"labels,omitempty"`
 
+	Coordinates *struct {
+		Latitude  float64 `json:"latitude"`
+		Longitude float64 `json:"longitude"`
+	} `json:"coordinates,omitempty"`
+
 	// Custom Fields
 	CustomFieldItems []*CustomFieldItem `json:"customFieldItems,omitempty"`
 
